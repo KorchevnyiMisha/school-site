@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-ff: 'Roboto', sans-serif;
+  --logo-ff: 'Alegreya Sans', sans-serif;
+  --main-color: #ffffff;
+  --main-color-2: #212121;
+  --accent-color: #f0bd07;
+  --accent-color-2: #f00;
+  --text-fw: 400;
+  --smaller-fw: 500;
+  --bolder-fw: 700;
+}
+
+body {
+  background: var(--main-color);
+  max-width: 1600;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.71;
+  font-size: 16px;
+  color: var(--main-color-2);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+p {
+  font-family: var(--main-ff);
+  font-weight: var(--text-fw);
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  font-family: var(--logo-ff);
+  font-weight: var(--smaller-fw);
+  font-size: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--logo-ff);
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center ;
+}
+
+a {
+  color: var(--main-color-2);
+  text-decoration: none;
+  font-family: var(--main-ff);
+}
+
+a:hover {
+  color: var(--accent-color-2);
+}
+
+
+/* ----------------------------------------------header---------------------------------------------- */
+
+
+header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: var(--accent-color);
+  padding-left: 200px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: 650px;
+}
+
+.contacts-item:last-child {
+  margin-left: 50px;
+}
+
+
+/* ---------------------------------------------------hero-----------------------------------------------------------------------*/
+
+
+.hero {
+  margin-bottom: 50px;
+}
+
+
+/* ----------------------------------------------------list------------------------------------------------------------------------ */
+
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-item {
+  position: relative;
+  width: 550px;
+  height: 440px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+
+  overflow: hidden;
+}
+
+.img-item:hover .main-item {
+  transform: translateX(0);
+}
+
+.main-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 550px;
+  height: 440px;
+  padding: 10px;
+  background-color: var(--main-color-2);
+  color: #eeeeee;
+  
+  transform: translateX(-100%);
+  transition: transform 250ms ease;
+}
+
+
+
+/* ------------------------------------------------footer-------------------------------------------------------------------------- */
+
+

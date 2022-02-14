@@ -11,7 +11,7 @@
   --main-color: #ffffff;
   --main-color-2: #212121;
   --accent-color: #f0bd07;
-  --accent-color-2: #f00
+  --accent-color-2: #f00;
   --text-fw: 400;
   --smaller-fw: 500;
   --bolder-fw: 700;
@@ -95,3 +95,54 @@ header {
 .contacts-item:last-child {
   margin-left: 50px;
 }
+
+
+/* ---------------------------------------------------hero-----------------------------------------------------------------------*/
+
+
+.hero {
+  margin-bottom: 50px;
+}
+
+
+/* ----------------------------------------------------list------------------------------------------------------------------------ */
+
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-item {
+  position: relative;
+  width: 550px;
+  height: 440px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+
+  overflow: hidden;
+}
+
+.img-item:hover .main-item {
+  transform: translateX(0);
+}
+
+.main-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 550px;
+  height: 440px;
+  padding: 10px;
+  background-color: var(--main-color-2);
+  color: #eeeeee;
+  
+  transform: translateX(-100%);
+  transition: transform 250ms ease;
+}
+
+
+
+/* ------------------------------------------------footer-------------------------------------------------------------------------- */
+
+

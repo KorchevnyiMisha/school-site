@@ -146,3 +146,41 @@ header {
 /* ------------------------------------------------footer-------------------------------------------------------------------------- */
 
 
+footer {
+  display: flex;
+  background-color: var(--accent-color);
+  padding-left: 200px;
+  height: 200px;
+  align-items: center;
+}
+
+address {
+  margin-right: 50px;
+  color: var(--main-color-2);
+  font-size: 17px;
+}
+
+.address-item:hover {
+  color: var(--accent-color-2);
+}
+
+.join-h {
+  text-transform: uppercase;
+  color: var(--main-color-2);
+}
+
+.join-icons-list {
+  display: flex;
+}
+
+.join-item {
+  color: var(--main-color);
+  background-color: var(--main-color-2);
+  border-radius: 100%;
+}
+
+.join-icon {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
